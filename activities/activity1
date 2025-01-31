@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3: Title of Activity 3</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html#about">About Me</a></li>
+                <li><a href="../index.html#articles">Articles</a></li>
+                <li><a href="../index.html#activities">Activities</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Activity 3: Title of Activity 3</h1>
+        <p>Date: October 15, 2023</p>
+        <p>Location: Virtual Conference</p>
+        <p>
+            This is a description of Activity 3. You can include details about the event, 
+            your role, key takeaways, and any relevant links or resources.
+        </p>
+        <h2>Highlights</h2>
+        <ul>
+            <li>Presented a paper on "Topic X".</li>
+            <li>Participated in a panel discussion on "Topic Y".</li>
+            <li>Networked with experts in the field.</li>
+        </ul>
+        <h2>Resources</h2>
+        <p>Download the presentation slides: <a href="path/to/slides.pdf" target="_blank">Slides (PDF)</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
