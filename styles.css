@@ -106,27 +106,36 @@ nav ul li a {
 
 .social-links {
     display: flex;
-    gap: 10px; /* Adjust spacing between icons */
+    flex-direction: column; /* Stack items neatly */
+    gap: 8px; /* Space between each social link */
     margin-top: 10px;
 }
 
 .social-links a {
-    display: inline-block;
-    width: 30px; /* Ensure each icon has a fixed width */
-    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    text-decoration: none;
+    color: #555; /* Dark grey text */
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .social-links img {
-    width: 100%;
-    height: auto;
-    max-width: 30px; /* Prevents icons from scaling too big */
-    transition: transform 0.2s ease-in-out;
+    width: 24px; /* Keeps icons small */
+    height: 24px;
+    filter: grayscale(100%) brightness(40%); /* Makes icons dark grey */
+    transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.social-links img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+.social-links a:hover img {
+    filter: grayscale(0%) brightness(100%); /* Restores color on hover */
+    transform: scale(1.1);
 }
 
+.social-links a:hover {
+    color: black; /* Darkens text on hover */
+}
 
 /* Footer */
 footer {
