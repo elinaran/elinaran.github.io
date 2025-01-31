@@ -129,7 +129,7 @@ nav ul li a {
 }
 
 .social-links a:hover img {
-    filter: grayscale(0%) brightness(100%); /* Restores color on hover */
+    filter: grayscale(50%) brightness(100%); /* Restores color on hover */
     transform: scale(1.1);
 }
 
