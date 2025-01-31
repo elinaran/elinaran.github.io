@@ -45,13 +45,17 @@ nav ul li a {
 }
 
 /* Activities Section */
+/* Activities Section */
 .activities-container {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Left: Big activity, Right: List */
-    gap: 20px;
+    grid-template-columns: 1.5fr 1fr; /* Adjust column ratio */
+    gap: 30px;
     align-items: start;
+    max-width: 1200px;
+    margin: auto;
 }
 
+/* Featured Activity */
 .featured-activity {
     position: relative;
     width: 100%;
@@ -59,8 +63,10 @@ nav ul li a {
 
 .featured-activity img {
     width: 100%;
-    height: auto;
+    height: 350px; /* Adjust height */
+    object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 
 .overlay {
@@ -71,20 +77,22 @@ nav ul li a {
     color: white;
     padding: 10px 15px;
     max-width: 80%;
+    border-radius: 5px;
 }
 
 .overlay p.category {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #80c0a0;
     margin: 0;
 }
 
 .overlay h2 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 5px 0 0;
 }
 
+/* Activities List */
 .activities-list {
     display: flex;
     flex-direction: column;
@@ -94,14 +102,14 @@ nav ul li a {
 .activity-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .activity-item img {
-    width: 80px;
-    height: 60px;
+    width: 100px; /* Increase width */
+    height: 70px; /* Increase height */
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .activity-text {
@@ -112,17 +120,17 @@ nav ul li a {
     font-size: 12px;
     text-transform: uppercase;
     color: #80c0a0;
-    margin: 0;
+    margin-bottom: 2px;
 }
 
 .activity-text h3 {
     font-size: 16px;
-    margin: 5px 0 0;
+    margin: 0;
     color: black;
     font-weight: bold;
 }
 
-/* Make links clickable for entire section */
+/* Make links clickable for the entire section */
 .activity-item a, .featured-activity a {
     display: flex;
     align-items: center;
@@ -130,7 +138,7 @@ nav ul li a {
     color: inherit;
 }
 
-/* Make the whole box clickable */
+/* Ensure whole box is clickable */
 .activity-item a img, 
 .activity-item a h3, 
 .activity-item a p,
@@ -139,6 +147,7 @@ nav ul li a {
 .featured-activity a p {
     pointer-events: none;
 }
+
 
 /* Remove link styles */
 .activity a {
