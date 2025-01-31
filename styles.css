@@ -140,6 +140,12 @@ nav ul li a {
     pointer-events: none;
 }
 
+/* Remove link styles */
+.activity a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep text color the same as the surrounding text */
+    display: block; /* Make the entire area clickable */
+}
 
 /* Bottom Section: About Me and Contact */
 .bottom-section {
