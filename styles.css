@@ -44,29 +44,63 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Articles and Activities Sections */
-#articles, #activities {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Activities Section */
+#activities {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.article-list, .activity-list {
+/* Grid Layout */
+.activity-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+/* Featured Activity (Full-width) */
+.activity.featured {
+    width: 100%;
+}
+
+.activity.featured img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Small Activities (2x2 Grid) */
+.activity.small {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
 }
 
-.article-list a, .activity-list a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+.activity.small img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.article-list a:hover, .activity-list a:hover {
-    text-decoration: underline;
+/* Responsive Grid: 2 Columns for Small Activities */
+@media (min-width: 768px) {
+    .activity-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activity.featured {
+        grid-column: span 2; /* Makes the featured activity take full width */
+    }
+}
+
+/* Responsive: Keep 2-Column Layout on Wider Screens */
+@media (min-width: 1024px) {
+    .activity-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
 }
 
 /* Bottom Section: About Me and Contact */
