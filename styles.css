@@ -104,6 +104,21 @@ nav ul li a {
     }
 }
 
+/* Remove link styles */
+.activity a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep text color the same as the surrounding text */
+    display: block; /* Make the entire area clickable */
+}
+
+/* Make the whole activity box clickable */
+.activity a img, 
+.activity a h2, 
+.activity a h3 {
+    pointer-events: none; /* Ensures the entire link is clickable, not just the text */
+}
+
+
 /* Bottom Section: About Me and Contact */
 .bottom-section {
     display: flex;
