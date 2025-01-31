@@ -45,77 +45,99 @@ nav ul li a {
 }
 
 /* Activities Section */
-/* Activities Section - Smaller */
-#activities {
-    width: 70%; /* Reduce the width of the entire section */
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Grid Layout */
-.activity-grid {
+.activities-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 15px; /* Reduce spacing */
+    grid-template-columns: 2fr 1fr; /* Left: Big activity, Right: List */
+    gap: 20px;
+    align-items: start;
 }
 
-/* Featured Activity (Full-width, but smaller) */
-.activity.featured {
+.featured-activity {
+    position: relative;
     width: 100%;
 }
 
-.activity.featured img {
-    width: 80%; /* Reduce image size */
+.featured-activity img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
 }
 
-/* Small Activities (Smaller Images in 2x2 Grid) */
-.activity.small {
+.overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    max-width: 80%;
+}
+
+.overlay p.category {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #80c0a0;
+    margin: 0;
+}
+
+.overlay h2 {
+    font-size: 22px;
+    margin: 5px 0 0;
+}
+
+.activities-list {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+}
+
+.activity-item {
+    display: flex;
     align-items: center;
-    text-align: center;
+    gap: 10px;
 }
 
-.activity.small img {
-    width: 80%; /* Reduce image size */
-    height: auto;
-    border-radius: 10px;
+.activity-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-/* Responsive Grid: 2 Columns for Small Activities */
-@media (min-width: 768px) {
-    .activity-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .activity.featured {
-        grid-column: span 2;
-    }
+.activity-text {
+    flex: 1;
 }
 
-/* Responsive: Keep 2-Column Layout on Wider Screens */
-@media (min-width: 1024px) {
-    .activity-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-    }
+.activity-text p.category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #80c0a0;
+    margin: 0;
 }
 
-/* Remove link styles */
-.activity a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Keep text color the same as the surrounding text */
-    display: block; /* Make the entire area clickable */
+.activity-text h3 {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: black;
+    font-weight: bold;
 }
 
-/* Make the whole activity box clickable */
-.activity a img, 
-.activity a h2, 
-.activity a h3 {
-    pointer-events: none; /* Ensures the entire link is clickable, not just the text */
+/* Make links clickable for entire section */
+.activity-item a, .featured-activity a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Make the whole box clickable */
+.activity-item a img, 
+.activity-item a h3, 
+.activity-item a p,
+.featured-activity a img, 
+.featured-activity a h2, 
+.featured-activity a p {
+    pointer-events: none;
 }
 
 
