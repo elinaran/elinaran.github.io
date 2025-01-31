@@ -106,22 +106,25 @@ nav ul li a {
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 10px; /* Adjust spacing between icons */
     margin-top: 10px;
 }
 
 .social-links a {
     display: inline-block;
+    width: 30px; /* Ensure each icon has a fixed width */
+    height: 30px;
 }
 
-.social-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease-in-out;
+.social-links img {
+    width: 100%;
+    height: auto;
+    max-width: 30px; /* Prevents icons from scaling too big */
+    transition: transform 0.2s ease-in-out;
 }
 
-.social-icon:hover {
-    transform: scale(1.1);
+.social-links img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 
