@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 3: Title of Activity 3</title>
+    <title>Activity 1: Title of Activity 1</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -22,11 +22,11 @@
     </header>
 
     <section>
-        <h1>Activity 3: Title of Activity 3</h1>
+        <h1>Activity 1: Title of Activity 1</h1>
         <p>Date: October 15, 2023</p>
         <p>Location: Virtual Conference</p>
         <p>
-            This is a description of Activity 3. You can include details about the event, 
+            This is a description of Activity 1. You can include details about the event, 
             your role, key takeaways, and any relevant links or resources.
         </p>
         <h2>Highlights</h2>
