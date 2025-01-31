@@ -45,9 +45,10 @@ nav ul li a {
 }
 
 /* Activities Section */
+/* Activities Section - Smaller */
 #activities {
-    width: 90%;
-    max-width: 1200px;
+    width: 70%; /* Reduce the width of the entire section */
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
@@ -56,21 +57,21 @@ nav ul li a {
 .activity-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px; /* Reduce spacing */
 }
 
-/* Featured Activity (Full-width) */
+/* Featured Activity (Full-width, but smaller) */
 .activity.featured {
-    width: 75%;
+    width: 100%;
 }
 
 .activity.featured img {
-    width: 100%;
+    width: 80%; /* Reduce image size */
     height: auto;
     border-radius: 10px;
 }
 
-/* Small Activities (2x2 Grid) */
+/* Small Activities (Smaller Images in 2x2 Grid) */
 .activity.small {
     display: flex;
     flex-direction: column;
@@ -79,7 +80,7 @@ nav ul li a {
 }
 
 .activity.small img {
-    width: 100%;
+    width: 80%; /* Reduce image size */
     height: auto;
     border-radius: 10px;
 }
@@ -91,7 +92,7 @@ nav ul li a {
     }
 
     .activity.featured {
-        grid-column: span 2; /* Makes the featured activity take full width */
+        grid-column: span 2;
     }
 }
 
