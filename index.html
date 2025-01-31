@@ -21,19 +21,41 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-        <p>
-            Welcome to my academic website! I am a researcher in the fields of law and sociology. 
-            Here, you can find my published articles, academic activities, and more.
-        </p>
-    </section>
+    <main>
+        <!-- Left Column: About Me -->
+        <section id="about" class="left-column">
+            <h1>About Me</h1>
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <p>
+                Welcome to my academic website! I am a researcher in the fields of law and sociology. 
+                Here, you can find my published articles, academic activities, and more.
+            </p>
+        </section>
 
+        <!-- Right Column: Contact -->
+        <section id="contact" class="right-column">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Articles and Activities Sections -->
     <section id="articles">
         <h1>Articles</h1>
         <div class="article-list">
             <a href="articles/article1.html">Article 1: Title of Article 1</a>
+            <a href="articles/article2.html">Article 2: Title of Article 2</a>
         </div>
     </section>
 
@@ -41,23 +63,8 @@
         <h1>Activities</h1>
         <div class="activity-list">
             <a href="activities/activity1.html">Activity 1: Title of Activity 1</a>
+            <a href="activities/activity2.html">Activity 2: Title of Activity 2</a>
         </div>
-    </section>
-
-    <section id="contact">
-        <h1>Contact</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
     </section>
 
     <footer>
