@@ -58,7 +58,7 @@ nav ul li a {
     position: relative;
     display: flex;
     align-items: flex-end; /* Ensures title stays at the bottom */
-    justify-content: center; /* Aligns title to the left */
+    justify-content: flex-start; /* Aligns title to the left */
     overflow: hidden; /* Prevents unwanted stretching */
 }
 
@@ -68,6 +68,8 @@ nav ul li a {
     object-fit: cover;
     display: block;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .overlay {
