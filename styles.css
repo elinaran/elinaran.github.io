@@ -59,6 +59,7 @@ nav ul li a {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .featured-activity {
@@ -69,6 +70,7 @@ nav ul li a {
     align-items: flex-end; /* Ensures title stays at the bottom */
     justify-content: flex-start; /* Aligns title to the left */
     overflow: hidden; /* Prevents unwanted stretching */
+    position: relative;
 }
 
 .overlay {
