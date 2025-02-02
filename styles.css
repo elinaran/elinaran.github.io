@@ -58,7 +58,7 @@ nav ul li a {
     position: relative;
     display: flex;
     align-items: flex-end; /* Ensures title stays at the bottom */
-    justify-content: flex-start; /* Aligns title to the left */
+    justify-content: center; /* Aligns title to the left */
     overflow: hidden; /* Prevents unwanted stretching */
 }
 
@@ -101,6 +101,7 @@ nav ul li a {
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 10px;
     align-self: end; /* Push to the bottom */
+    margin: 30px;
 }
 
 .activity-item {
