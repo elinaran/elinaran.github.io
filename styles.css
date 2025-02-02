@@ -158,7 +158,7 @@ nav ul li a {
 }
 
 /* Remove link styles */
-.activity a {
+a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Keep text color the same as the surrounding text */
     display: block; /* Make the entire area clickable */
