@@ -51,17 +51,6 @@ nav ul li a {
 
 
 /* Featured Activity */
-.featured-activity {
-    grid-column: 1 / 2; /* Large featured activity on the left */
-    width: 60%; /* Adjust this for a balanced size */
-    max-height: 300px; /* Prevents excessive stretching */
-    position: relative;
-    display: flex;
-    align-items: flex-end; /* Ensures title stays at the bottom */
-    justify-content: center; /* Aligns title to the left */
-    overflow: hidden; /* Prevents unwanted stretching */
-}
-
 .featured-activity img {
     width: 50%;
     height: 200px; /* Adjusted height */
@@ -70,6 +59,17 @@ nav ul li a {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+.featured-activity {
+    grid-column: 1 / 2; /* Large featured activity on the left */
+    width: 60%; /* Adjust this for a balanced size */
+    max-height: 300px; /* Prevents excessive stretching */
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Ensures title stays at the bottom */
+    justify-content: flex-start; /* Aligns title to the left */
+    overflow: hidden; /* Prevents unwanted stretching */
 }
 
 .overlay {
