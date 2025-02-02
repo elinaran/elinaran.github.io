@@ -69,7 +69,7 @@ nav ul li a {
 }
 
 .featured-activity img {
-    width: 100%; /* Ensure image takes up full width of parent */
+    width: 90%; /* Ensure image takes up full width of parent */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop image to fit without distortion */
     display: block;
