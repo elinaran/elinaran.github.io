@@ -65,7 +65,6 @@ nav ul li a {
     grid-column: 1 / 2; /* Large featured activity on the left */
     width: 60%; /* Adjust this for a balanced size */
     max-height: 300px; /* Prevents excessive stretching */
-    position: relative;
     display: flex;
     align-items: flex-end; /* Ensures title stays at the bottom */
     justify-content: flex-start; /* Aligns title to the left */
