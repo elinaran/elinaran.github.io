@@ -60,7 +60,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 100px auto;
+    padding: 100 0;
 }
 
 .featured-activity {
@@ -72,7 +72,7 @@ nav ul li a {
     justify-content: flex-start; /* Aligns title to the left */
     overflow: hidden; /* Prevents unwanted stretching */
     position: relative;
-    margin: 100px auto;
+    padding: 100 0;
 }
 
 .overlay {
