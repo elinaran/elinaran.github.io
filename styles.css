@@ -58,9 +58,9 @@ nav ul li a {
     display: block;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 100 0;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 100px 0;
 }
 
 .featured-activity {
@@ -72,7 +72,7 @@ nav ul li a {
     justify-content: flex-start; /* Aligns title to the left */
     overflow: hidden; /* Prevents unwanted stretching */
     position: relative;
-    padding: 100 0;
+    padding: 100px 0;
 }
 
 .overlay {
