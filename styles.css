@@ -79,7 +79,6 @@ nav ul li a {
     padding: 10px 10px;
     max-width: 75%;
     border-radius: 5px;
-    z-index: 10; /* Ensures it is above the image */
 }
 
 .overlay p.category {
