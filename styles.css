@@ -52,27 +52,23 @@ nav ul li a {
 
 /* Featured Activity */
 .featured-activity img {
-    width: 50%;
-    height: 200px; /* Adjusted height */
+     width: 50%;
+    height: 200px;
     object-fit: cover;
     display: block;
     border-radius: 10px;
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    padding: 100px 0;
 }
 
 .featured-activity {
     grid-column: 1 / 2; /* Large featured activity on the left */
-    width: 60%; /* Adjust this for a balanced size */
+    width: 60%; /* Adjust for balance */
     max-height: 300px; /* Prevents excessive stretching */
     display: flex;
-    align-items: flex-end; /* Ensures title stays at the bottom */
-    justify-content: flex-start; /* Aligns title to the left */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
     overflow: hidden; /* Prevents unwanted stretching */
     position: relative;
-    padding: 100px 0;
+    padding: 100px 0; /* Corrected padding */
 }
 
 .overlay {
