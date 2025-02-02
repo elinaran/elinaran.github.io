@@ -73,7 +73,7 @@ nav ul li a {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop image to fit without distortion */
     display: block;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .overlay {
