@@ -49,6 +49,12 @@ nav ul li a {
     text-align: center;
 }
 
+.activities-container { 
+    display: flex;
+    justify-content: center; /* Centers the featured activity */
+    align-items: center;
+    width: 100%; /* Ensures it takes full width */
+}
 
 /* Featured Activity */
 
