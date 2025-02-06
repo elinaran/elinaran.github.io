@@ -68,7 +68,7 @@ nav ul li a {
     align-items: flex-end; /* Keeps overlay at the bottom */
     justify-content: center; /* Centers content */
     overflow: hidden; /* Prevents content from going out */
-    padding: 20px 0;
+    padding: 0 20px 0;
 }
 
 .featured-activity img {
