@@ -22,6 +22,8 @@ header .logo img {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Ensures the list items are in a row */
+    justify-content: center; /* Centers the items */
 }
 
 nav ul li {
