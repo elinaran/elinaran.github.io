@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="../styles.css">"
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="articles">
+    <h1>Activities</h1>
+
+    <div class="article-grid">
+        <!-- Featured Article (Full-width) -->
+        <div class="article featured">
+            <a href="article/article1.html">
+                <img src="images/article1.jpg" alt="Article 1 Image">
+                <h2>Featured Article Title</h2>
+            </a>
+        </div>
+
+        <!-- Smaller Articles (2 Columns, 2 Rows) -->
+        <div class="article small">
+            <a href="article/article2.html">
+                <img src="images/article2.jpg" alt="Article 2 Image">
+                <h3>Article 2 Title</h3>
+            </a>
+        </div>
+        <div class="article small">
+            <a href="article/article3.html">
+                <img src="images/article3.jpg" alt="Article 3 Image">
+                <h3>Article 3 Title</h3>
+            </a>
+        </div>
+        <div class="article small">
+            <a href="article/article4.html">
+                <img src="images/article4.jpg" alt="Article 4 Image">
+                <h3>Article 4 Title</h3>
+            </a>
+        </div>
+        <div class="article small">
+            <a href="article/article5.html">
+                <img src="images/article5.jpg" alt="Article 5 Image">
+                <h3>Article 5 Title</h3>
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2025 Your Name</p>
+    </footer>
+</body>
+</html>
